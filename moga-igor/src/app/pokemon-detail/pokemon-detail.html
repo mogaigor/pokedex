@@ -1,0 +1,17 @@
+@if (pokemon) {
+
+  <div style="border: 2px solid black; padding: 20px; margin-top: 20px; text-align: center;">
+
+    <h2>{{ pokemon.name }}</h2>
+
+    <img [src]="pokemon.imageUrl" width="300" height="300">
+
+    <p><strong>Tipo:</strong> {{ pokemon.type }}</p>
+
+    <p><strong>HP:</strong> {{ pokemon.hp }}</p>
+
+    <p>{{ pokemon.description }}</p>
+
+  </div>
+
+}

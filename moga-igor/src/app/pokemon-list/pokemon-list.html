@@ -1,0 +1,22 @@
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+  @for (p of myPokemons; track p.id) {
+
+    <div (click)="select(p)"
+         style="border: 1px solid #ccc; padding: 10px; width: 200px; text-align: center; cursor: pointer;">
+
+      <h3>{{ p.name }}</h3>
+      <p>{{ p.type }}</p>
+
+      <img [src]="p.imageUrl" width="150" height="150">
+
+    </div>
+
+  }
+
+</div>
+
+
+@if (selectedElement) {
+  <app-pokemon-detail [pokemon]="selectedElement"></app-pokemon-detail>
+}
