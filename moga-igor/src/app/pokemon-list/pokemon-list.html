@@ -1,6 +1,6 @@
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
-  @for (p of myPokemons; track p.id) {
+  @for (p of myPokemons; track p) {
 
     <div (click)="select(p)"
          style="border: 1px solid #ccc; padding: 10px; width: 200px; text-align: center; cursor: pointer;">
