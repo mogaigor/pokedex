@@ -87,7 +87,7 @@ export class PokemonList {
     },
     {
       id: 150,
-      name: 'Mewtwo',
+      name: 'Mew',
       type: 'Psico',
       hp: 106,
       imageUrl: 'assets/pokemon-images/mew.png',
